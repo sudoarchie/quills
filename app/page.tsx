@@ -9,9 +9,11 @@ import zeroWaste from "@/public/zero-waste-wooden-utensils.jpg"
 import leafEcoWord from "@/public/leaf-eco-word.jpg"
 import EcoPaper from "@/public/il_1140xN.3001108197_2s4u.jpg"
 import ProductMain from "@/components/ProductsMain";
+import { Navbar } from "@/components/ui/navbar";
 export default function Home() {
 return (
   <>
+  <Navbar></Navbar>
   <HeroParallax products={[
     {
       title: "",
