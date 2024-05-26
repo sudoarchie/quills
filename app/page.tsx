@@ -15,6 +15,8 @@ import asthatic3 from "@/public/Designer (21).jpeg"
 import asthatic4 from "@/public/4fb64872-2711-4321-b3ae-feb466a4920f.jpeg"
 import asthatic5 from "@/public/Designer (11).jpeg"
 import { Navbar } from "@/components/ui/navbar";
+import { Globe } from "@/components/ui/globe";
+import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 export default function Home() {
 return (
   <>
@@ -103,6 +105,13 @@ return (
   
   
   ]}></HeroParallax>
+  <div>
+    <h2 className="text-5xl text-center font-extrabold text-black dark:text-white ">Crafting a Sustainable
+     <div className="ransition delay-150 duration-300 ease-in-out active:bg-green-400 hover:text-white">
+      Future
+      </div>
+     </h2>
+  </div>
   <ProductMain></ProductMain>
     
   </>  
