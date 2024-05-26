@@ -9,6 +9,11 @@ import zeroWaste from "@/public/zero-waste-wooden-utensils.jpg"
 import leafEcoWord from "@/public/leaf-eco-word.jpg"
 import EcoPaper from "@/public/il_1140xN.3001108197_2s4u.jpg"
 import ProductMain from "@/components/ProductsMain";
+import asthatic1 from "@/public/c57e19bb-2d00-4a95-aa49-e991efad4622.jpeg"
+import asthatic2 from "@/public/Designer (7).jpeg"
+import asthatic3 from "@/public/Designer (21).jpeg"
+import asthatic4 from "@/public/4fb64872-2711-4321-b3ae-feb466a4920f.jpeg"
+import asthatic5 from "@/public/Designer (11).jpeg"
 import { Navbar } from "@/components/ui/navbar";
 export default function Home() {
 return (
@@ -68,6 +73,31 @@ return (
     title: "",
     link: "",
     thumbnail: careEnv
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: asthatic4
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: asthatic2
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: asthatic3
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: asthatic1
+  },
+  {
+    title: "",
+    link: "",
+    thumbnail: asthatic5
   },
   
   
