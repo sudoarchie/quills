@@ -4,6 +4,12 @@ import React from 'react'
 import { Menu, X, MapPin } from 'lucide-react'
 import { Navbar } from '@/components/ui/navbar'
 import { FooterOne } from '@/components/Footer'
+import abhipfp from '@/public/abhipfp.jpeg'
+import badal from '@/public/badalpfp.jpeg'
+import kusalpfp from '@/public/kusalpfp.jpeg'
+import shivampfp from '@/public/shivampfp.jpeg'
+import anuvpfp from '@/public/Anuvpfp.jpeg'
+import Image from 'next/image'
 
 const menuItems = [
   {
@@ -32,32 +38,27 @@ const locations = [
 const users = [
   {
     name: 'Abhishek Kumar',
-    image:
-      'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
-    position: 'Marketing Lead',
+    image: abhipfp,
+    position: 'Director',
   },
   {
     name: 'Anubhav',
-    image:
-      'https://images.generated.photos/vBRCiI_3UM4l40sU8s7fCwbJwzDwRTGpebzPkfHFsY4/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODgyMTAyLmpwZw.jpg',
-    position: '',
+    image: anuvpfp,
+    position: 'Director',
   },
   {
     name: 'Shivam singh',
-    image:
-      'https://images.unsplash.com/photo-1549351512-c5e12b11e283?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600',
+    image: shivampfp,
     position: 'Tech Lead',
   },
   {
     name: 'Kushal Jaiswal',
-    image:
-      'https://images.unsplash.com/photo-1485960994840-902a67e187c8?q=80&fm=jpg&crop=faces&fit=crop&h=600&w=600',
+    image: kusalpfp,
     position: 'Sales Lead',
   },
   {
     name: 'Bhopender singh gautam',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&crop=faces&fit=crop&h=600&w=600',
+    image: badal,
     position: 'Social Media Lead',
   },
   
@@ -80,12 +81,12 @@ export default function AboutPageOne() {
           <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
             <p className="text-xs font-semibold leading-normal md:text-sm dark:text-black">About the company</p>
           </div>
-          <p className="text-3xl font-bold text-gray-900 dark:text-white md:text-5xl md:leading-10">
+          <div className="text-3xl font-bold text-gray-900 dark:text-white md:text-5xl md:leading-10">
             Made with love, right here in &nbsp;
-            <div className='bg-gradient-to-t from-green-300 via-white to-orange-300 inline text-green-900 rounded-3xl px-2'>
+            <h4 className='bg-gradient-to-t from-green-300 via-white to-orange-300 inline text-green-900 rounded-3xl px-2'>
                  India
-                </div>
-          </p>
+                </h4>
+          </div>
           <p className="max-w-4xl text-base text-gray-600 md:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis voluptates
             neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
@@ -128,12 +129,15 @@ export default function AboutPageOne() {
         <div className="grid grid-cols-1 gap-4 gap-y-6 border-b border-gray-300 py-12 pb-20 md:grid-cols-2 lg:grid-cols-4">
           {users.map((user) => (
             <div className="rounded-md border" key={user.name}>
-              <img
+              <Image
                 src={user.image}
                 alt={user.name}
+                width={100}
+                height={100}
+                unoptimized
                 className="h-[300px] w-full rounded-lg object-cover "
               />
-              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900">{user.name}</p>
+              <p className="mt-6 w-full px-2 text-xl  font-semibold text-gray-900 dark:text-white">{user.name}</p>
               <p className="w-full px-2 pb-6 text-sm font-semibold text-gray-500">
                 {user.position}
               </p>
