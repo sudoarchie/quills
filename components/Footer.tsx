@@ -4,18 +4,7 @@ import React from 'react'
 export function FooterOne() {
   return (
     <footer className="w-full">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2 lg:px-0">
-       
-        <div className="hidden items-center md:inline-flex">
-          <span className="text-sm font-medium text-black">Ready to Get Started ?</span>
-          <button
-            type="button"
-            className="ml-2 rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-          >
-            Get Started
-          </button>
-        </div>
-      </div>
+  
       <hr className="my-8" />
       <div className="mx-auto flex max-w-6xl flex-col items-start space-x-8 md:flex-row">
         <div className="w-full px-4 md:w-1/2 lg:px-0">
