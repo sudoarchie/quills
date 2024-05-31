@@ -4,7 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 export function Brands() {
     return (<>
     <h2 className='text-center text-4xl font-bold my-12'>Our Brands</h2>
-        <div className='flex gap-10 items-center justify-center my-14'>
+        <div className='flex flex-wrap gap-10 items-center justify-center my-14'>
 
             <div className="w-[300px] rounded-md border">
                 <img
@@ -46,20 +46,20 @@ export function Brands() {
                 />
                 <div className="p-4">
                     <h1 className="inline-flex items-center text-lg font-semibold">
-                        About Macbook &nbsp; <ArrowUpRight className="h-4 w-4" />
+                        Cursive
                     </h1>
                     <p className="mt-3 text-sm text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
                     </p>
                     <div className="mt-4">
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Macbook
+                            #Ecopens
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Apple
+                            #Quills
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Laptop
+                            #Cursive
                         </span>
                     </div>
                     <button
@@ -78,20 +78,20 @@ export function Brands() {
                 />
                 <div className="p-4">
                     <h1 className="inline-flex items-center text-lg font-semibold">
-                        About Macbook &nbsp; <ArrowUpRight className="h-4 w-4" />
+                        Earthwise
                     </h1>
                     <p className="mt-3 text-sm text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
                     </p>
                     <div className="mt-4">
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Macbook
+                            #Earthwise
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Apple
+                            #Ecopens
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Laptop
+                            #Quills
                         </span>
                     </div>
                     <button
@@ -110,20 +110,20 @@ export function Brands() {
                 />
                 <div className="p-4">
                     <h1 className="inline-flex items-center text-lg font-semibold">
-                        About Macbook &nbsp; <ArrowUpRight className="h-4 w-4" />
+                        Quilly
                     </h1>
                     <p className="mt-3 text-sm text-gray-600">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
                     </p>
                     <div className="mt-4">
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Macbook
+                            #Quilly
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Apple
+                            #Ecopens
                         </span>
                         <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                            #Laptop
+                            #Quills
                         </span>
                     </div>
                     <button
