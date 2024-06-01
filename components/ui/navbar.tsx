@@ -10,12 +10,12 @@ const menuItems = [
     },
     {
         name: 'Products',
-        href: '#',
+        href: '/products',
     },
-    {
-        name: 'Brands',
-        href: '#',
-    },
+    // {
+    //     name: 'Brands',
+    //     href: '#',
+    // },
     {
         name: 'Media',
         href: '#',
