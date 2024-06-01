@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Menu, X } from 'lucide-react'
+import Link from 'next/link'
 
 const menuItems = [
     {
@@ -22,7 +23,7 @@ const menuItems = [
     },
     {
         name: 'Cart',
-        href: '#',
+        href: '/cart',
     },
     {
         name: 'About',
@@ -56,12 +57,15 @@ export function Navbar() {
                     </ul>
                 </div>
                 <div className="hidden lg:block">
+                    <Link href='/signin'>
+
                     <button
                         type="button"
                         className="rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                    >
+                        >
                         Login
                     </button>
+                        </Link>
                 </div>
                 <div className="lg:hidden">
                     <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
@@ -101,12 +105,14 @@ export function Navbar() {
                                         ))}
                                     </nav>
                                 </div>
+                                <Link href='/signin'>
                                 <button
                                     type="button"
                                     className="mt-4 w-full rounded-md bg-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                                >
+                                    >
                                     Login
                                 </button>
+                                    </Link>
                             </div>
                         </div>
                     </div>

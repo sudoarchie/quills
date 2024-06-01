@@ -157,7 +157,7 @@ export default function ProductOverviewOne() {
                             <div className='border-gray-600 border-2 p-5 my-2' key={index}>
                             <h3>{data.username}</h3>
                             {data.star.map((star,id)=>(
-                                <span>⭐</span>
+                                <span key={id}>⭐</span>
                             ))}
                             <p>{data.message}</p>
                             
