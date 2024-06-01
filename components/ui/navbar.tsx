@@ -18,7 +18,7 @@ const menuItems = [
     // },
     {
         name: 'Media',
-        href: '#',
+        href: '/media',
     },
     {
         name: 'Cart',
