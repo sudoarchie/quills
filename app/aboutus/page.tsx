@@ -57,7 +57,7 @@ const users = [
     position: 'Sales Lead',
   },
   {
-    name: 'Bhopender singh gautam',
+    name: 'Bhopendra singh gautam',
     image: badal,
     position: 'Social Media Lead',
   },
