@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export function FooterOne() {
@@ -27,19 +28,19 @@ export function FooterOne() {
               </h3>
               <ul>
                 <li className="mb-4">
-                  <a className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="#">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/aboutus">
                     About us
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="#">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/products">
                     Products
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="#">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/media">
                     Media
-                  </a>
+                  </Link>
                 </li>
                 {/* <li>
                   <a className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="#">

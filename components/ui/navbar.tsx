@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Menu, X } from 'lucide-react'
+import { Link2OffIcon, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 
 const menuItems = [
@@ -46,12 +46,12 @@ export function Navbar() {
                     <ul className="inline-flex space-x-8">
                         {menuItems.map((item) => (
                             <li key={item.name}>
-                                <a
+                                <Link
                                     href={item.href}
                                     className="text-sm font-semibold text-gray-800 hover:text-gray-900"
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>
