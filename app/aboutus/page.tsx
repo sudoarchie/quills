@@ -87,17 +87,14 @@ export default function AboutPageOne() {
                  India
                 </h4>
           </div>
-          <p className="max-w-4xl text-base text-gray-600 md:text-xl">
+          {/* <p className="max-w-4xl text-base text-gray-600 md:text-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veritatis voluptates
             neque itaque repudiandae sint, explicabo assumenda quam ratione placeat?
-          </p>
+          </p> */}
         </div>
         <div className="w-full space-y-4">
-          <img
-            className="h-[200px] w-full rounded-xl object-cover md:h-full"
-            src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/google-map.jpg"
-            alt=""
-          />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.011303451819!2d77.37063589678957!3d28.629492600000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5004787c167%3A0x300b68d426477fb3!2sNoida%20electronic%20city!5e1!3m2!1sen!2sin!4v1719141345417!5m2!1sen!2sin" width="1200" height="400" loading="lazy" className='rounded-xl'></iframe>
+          
         </div>
         {/* locations */}
         <div className="my-8 flex flex-col gap-y-6 md:flex-row lg:justify-around">
@@ -114,9 +111,9 @@ export default function AboutPageOne() {
         {/* greetings */}
         <div className="mt-16 flex items-center">
           <div className="space-y-6 md:w-3/4">
-            <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
+            {/* <div className="max-w-max rounded-full border bg-gray-50 p-1 px-3">
               <p className="text-xs font-semibold leading-normal dark:text-black md:text-sm">Join Us &rarr;</p>
-            </div>
+            </div> */}
             <p className="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">Meet our team</p>
             <p className="max-w-4xl text-base text-gray-700 md:text-xl">
               Our philosophy is simple — hire a team of diverse, passionate people and foster a

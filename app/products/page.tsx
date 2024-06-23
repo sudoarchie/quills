@@ -1,31 +1,23 @@
 import { FooterOne } from "@/components/Footer";
 import { Navbar } from "@/components/ui/navbar";
 import Link from "next/link";
+import img1 from "@/public/quill pen photo  (1).png"
+import Image from "next/image";
 
 
 export default function ProductPage() {
    
     const products = [{
         title: 'Quills',
-        about: 'Quills is best',
+        about: 'WORD THAT FLOW WITH A PEN THAT GROW',
         href: '#',
-        image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
+        image: img1,
         Blue: true,
         black: true,
         red: true,
         green: true
     },
-    {
-        title: 'Earthwise',
-        about: 'Quills is best',
-        href: '#',
-        image: 'https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
-        Blue: true,
-        black: true,
-        red: true,
-        green: true
-
-    }
+   
 ];
 
     return (
@@ -35,7 +27,7 @@ export default function ProductPage() {
             <div className="flex flex-wrap justify-center gap-6">
                 {products.map((product, index) => (
                     <div key={index} className="w-[300px] rounded-md border">
-                        <img
+                        <Image
                             src={product.image}
                             alt={product.title}
                             className="h-[200px] w-full rounded-t-md object-cover"
@@ -63,7 +55,7 @@ export default function ProductPage() {
                                     
                            
                             </div>
-                            <Link href='/buy'>
+                            {/* <Link href='/buy'>
 
                             <button
                                 type="button"
@@ -72,7 +64,7 @@ export default function ProductPage() {
                                 >
                                 Buy
                             </button>
-                                </Link>
+                                </Link> */}
                         </div>
                     </div>
                 ))}

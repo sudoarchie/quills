@@ -21,10 +21,10 @@ const menuItems = [
         name: 'Media',
         href: '/media',
     },
-    {
-        name: 'Cart',
-        href: '/cart',
-    },
+    // {
+    //     name: 'Cart',
+    //     href: '/cart',
+    // },
     {
         name: 'About',
         href: '/aboutus',
