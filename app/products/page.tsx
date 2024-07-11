@@ -55,7 +55,7 @@ export default function ProductPage() {
                                     
                            
                             </div>
-                            {/* <Link href='/buy'>
+                            <Link href='/buy'>
 
                             <button
                                 type="button"
@@ -64,7 +64,7 @@ export default function ProductPage() {
                                 >
                                 Buy
                             </button>
-                                </Link> */}
+                                </Link>
                         </div>
                     </div>
                 ))}

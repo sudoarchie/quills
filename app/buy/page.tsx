@@ -1,15 +1,19 @@
 'use client'
 import { FooterOne } from '@/components/Footer'
+import Tilt3DImage from '@/components/ui/Tilt3DImage'
 import { Navbar } from '@/components/ui/navbar'
 import Link from 'next/link'
-
+import quills from '@/public/Designer (1).jpeg'
 import React, { useState } from 'react'
 
-export default function ProductOverviewOne() {
+export default function ProductOverviewOne(this: any) {
+   
+   
     const product={
         title: 'Quills',
         about: 'the thickness is 0.5mm and gel type pen',
         price: 20,
+        color:['red','blue','green','black'],
         image:'',
         reviews: [
             {
@@ -20,6 +24,26 @@ export default function ProductOverviewOne() {
         ]
     }
     const [quantity,setQuantity]=useState(100)
+
+    const [color,setColor]=useState(product.color[0])
+    function selectColor(color:any){
+        setColor(color)
+    }
+
+    async function addToCart(){
+        localStorage.setItem("products",JSON.stringify([{
+            title: product.title,
+            price: product.price,
+            color:  color,
+            quantity: quantity,
+        }]))
+    }
+
+
+
+    //animation 
+    
+
     return (<>
         <Navbar></Navbar>
         <div className="mx-auto max-w-7xl px-4 md:px-8 2xl:px-16">
@@ -45,16 +69,12 @@ export default function ProductOverviewOne() {
                 </div>
             </div>
             <div className="block grid-cols-9 items-start gap-x-10 pb-10 pt-7 lg:grid lg:pb-14 xl:gap-x-14 2xl:pb-20">
-                <div className="col-span-5 grid grid-cols-2 gap-2.5">
-                    {Array.from({ length: 4 }, (_, i) => (
-                        <div key={i} className="col-span-1 transition duration-150 ease-in hover:opacity-90">
-                            <img
-                                src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
-                                alt="Nike Air Max 95 By You--0"
-                                className="w-full object-cover"
-                            />
+                <div className="col-span-5 grid ">
+                   
+                        <div className="col-span-1 transition duration-150 ease-in hover:opacity-90 max-w-[500px] m-auto my-10 " >
+                           <Tilt3DImage  alt='quills' image={quills}></Tilt3DImage>
                         </div>
-                    ))}
+         
                 </div>
                 <div className="col-span-4 pt-8 lg:pt-0">
                     <div className="mb-7 border-b border-gray-300 pb-7">
@@ -80,8 +100,9 @@ export default function ProductOverviewOne() {
                                 color
                             </h3>
                             <ul className="colors -mr-3 flex flex-wrap">
-                                {['bg-red-800', 'bg-blue-800', 'bg-black', 'bg-green-800'].map((color) => (
+                                {[`bg-${product.color[0]}-800`, `bg-${product.color[1]}-800`, `bg-${product.color[2]}-800`, `bg-${product.color[3]}-800`].map((color) => (
                                     <li
+                                        onClick={selectColor}
                                         key={color}
                                         className="text-heading mb-2 mr-2 flex h-9 w-9 cursor-pointer items-center justify-center rounded border border-gray-100 p-1 text-xs font-semibold uppercase transition duration-200 ease-in-out hover:border-black md:mb-3 md:mr-3 md:h-11 md:w-11 md:text-sm"
                                     >
