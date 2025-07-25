@@ -1,75 +1,134 @@
-import { FooterOne } from "@/components/Footer";
-import { Navbar } from "@/components/ui/navbar";
-import Link from "next/link";
-import img1 from "@/public/quill pen photo  (1).png"
-import Image from "next/image";
-
-
-export default function ProductPage() {
-   
-    const products = [{
-        title: 'Quills',
-        about: 'WORD THAT FLOW WITH A PEN THAT GROW',
-        href: '#',
-        image: img1,
-        Blue: true,
-        black: true,
-        red: true,
-        green: true
+import React from 'react'
+import { ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
+import img1 from '@/public/quill pen photo  (1).png'
+import img2 from '@/public/confrancepad.png'
+import img3 from '@/public/toothbrush.png'
+import img4 from '@/public/handbag.png'
+import img6 from '@/public/quote.png'
+import img7 from '@/public/Gemini_Generated_Image_2g7hx82g7hx82g7h.png'
+import img8 from '@/public/notebook.png'
+import img9 from '@/public/pot.jpg'
+export default function Products() {
+  const brands = [
+    {
+      id: 3,
+      name: "Quills",
+      description: "WORD THAT FLOW\nWITH A PEN THAT GROW",
+      image: img1,
+      tags: ["#Quills Stroke", "#Eco pens", "#Quills pen"],
+      isLocal: true,
+      price: "₹349"
     },
-   
-];
+    {
+      id: 1,
+      name: "Conference Pad",
+      description: "Eco-friendly conference pads made from recycled materials for sustainable note-taking.",
+      image: img2,
+      tags: ["#EcoFriendly", "#Sustainable", "#ConferencePad"],
+      isLocal: true,
+      price: "₹199"
+    },
+    {
+      id: 2,
+      name: "Toothbrush",
+      description: "Biodegradable toothbrushes with bamboo handles for a greener oral care routine.",
+      image: img3,
+      tags: ["#EcoFriendly", "#Bamboo", "#Toothbrush"],
+      isLocal: true,
+      price: "₹89"
+    },
+    {
+      id: 7,
+      name: "Handbag",
+      description: "Stylish and sustainable handbags crafted from recycled materials.",
+      image: img4,
+      tags: ["#EcoFriendly", "#SustainableFashion", "#Handbag"],
+      isLocal: true,
+      price: "₹1499"
+    },
+    {
+      id: 4,
+      name: "Photo Frame",
+      description: "Eco-friendly photo frames made from reclaimed wood and recycled materials.",
+      image: img6,
+      tags: ["#EcoFriendly", "#PhotoFrame", "#SustainableLiving"],
+      isLocal: true,
+      price: "₹549"
+    },
+    {
+      id: 5,
+      name: "Jute Bag",
+      description: "Durable and reusable jute bags for eco-conscious shopping and storage.",
+      image: img7,
+      tags: ["#EcoFriendly", "#JuteBag", "#Reusable"],
+      isLocal: true,
+      price: "₹179"
+    },
+    {
+      id: 6,
+      name: "Notebook",
+      description: "Eco-friendly notebooks made from recycled paper for sustainable writing and note-taking.",
+      image: img8,
+      tags: ["#EcoFriendly", "#Notebook", "#RecycledPaper"],
+      isLocal: true,
+      price: "₹229"
+    },
+    {
+      id: 8,
+      name: "Coco Pot",
+      description: "EcoFriendly pot made from decompose into organic matter ",
+      image: img9,
 
-    return (
-        <>
-            <Navbar />
-            <h2 className="text-center font-bold text-5xl m-5">Our Products</h2>
-            <div className="flex flex-wrap justify-center gap-6">
-                {products.map((product, index) => (
-                    <div key={index} className="w-[300px] rounded-md border">
-                        <Image
-                            src={product.image}
-                            alt={product.title}
-                            className="h-[200px] w-full rounded-t-md object-cover"
-                        />
-                        <div className="p-4">
-                            <h1 className="inline-flex items-center text-lg font-semibold">
-                                {product.title}
-                            </h1>
-                            <p className="mt-3 text-sm text-gray-600">
-                                {product.about}
-                            </p>
-                            <div className="mt-4">
-                              {product.Blue ? <span  className={`mb-2 mr-2 inline-block rounded-full bg-blue-800 px-3 py-1 text-[10px] font-semibold text-white`}>
-                                        Blue
-                                    </span> : <span className="hidden"></span> }
-                              {product.black ? <span  className={`mb-2 mr-2 inline-block rounded-full bg-black px-3 py-1 text-[10px] font-semibold text-white`}>
-                                        Black
-                                    </span> : <span className="hidden"></span> }
-                              {product.red ? <span  className={`mb-2 mr-2 inline-block rounded-full bg-red-800 px-3 py-1 text-[10px] font-semibold text-white`}>
-                                        Red
-                                    </span> : <span className="hidden"></span> }
-                              {product.green ? <span  className={`mb-2 mr-2 inline-block rounded-full bg-green-800 px-3 py-1 text-[10px] font-semibold text-white`}>
-                                        Green
-                                    </span> : <span className="hidden"></span> }
-                                    
-                           
-                            </div>
-                            <Link href='/buy'>
+      tags: ["#EcoFriendly", "#Pot", "#Recycled"],
+      isLocal: true
+    }
+  ];
 
-                            <button
-                                type="button"
-                                className="mt-4 w-full rounded-sm bg-black dark:bg-white px-2 py-1.5 text-sm font-semibold text-white dark:text-black shadow-sm hover:bg-black/80 dark:hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-                                
-                                >
-                                Buy
-                            </button>
-                                </Link>
-                        </div>
-                    </div>
+  return (
+    <>
+      <h2 className='text-center text-4xl font-bold my-12'>Our Products</h2>
+      <div className='flex flex-wrap gap-10 items-center justify-center my-14'>
+        {brands.map((brand) => (
+          <div key={brand.id} className="w-[300px] h-[480px] rounded-md border flex flex-col shadow-sm hover:shadow-md transition-shadow">
+            <Image
+              src={brand.image}
+              alt={brand.name}
+              className="h-[200px] w-full rounded-t-md object-cover object-top flex-shrink-0"
+            />
+
+            <div className="p-4 flex-1 flex flex-col">
+              <div className="flex justify-between items-start mb-3">
+                <h1 className="text-lg font-semibold">
+                  {brand.name}
+                </h1>
+                <span className="text-lg font-bold text-green-600">
+                  {brand.price}
+                </span>
+              </div>
+              <p className="text-sm text-gray-600 whitespace-pre-line flex-1 mb-4 line-clamp-3 overflow-hidden">
+                {brand.description}
+              </p>
+              <div className="mb-4">
+                {brand.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900"
+                  >
+                    {tag}
+                  </span>
                 ))}
+              </div>
+              <button
+                className="mt-auto w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                Buy Now
+                <ArrowUpRight size={16} />
+              </button>
             </div>
-            <FooterOne />
-        </>
-    );
+          </div>
+        ))}
+      </div>
+    </>
+  )
 }

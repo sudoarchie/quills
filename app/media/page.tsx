@@ -18,7 +18,6 @@ import img13 from "@/public/open4.jpg";
 export default function Media() {
   return (
     <>
-      <Navbar></Navbar>
       <h2 className="text-5xl font-bold text-center my-8">Media</h2>
       <ParallaxScroll
         images={[
