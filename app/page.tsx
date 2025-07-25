@@ -19,101 +19,106 @@ import { Navbar } from "@/components/ui/navbar";
 import { FooterOne } from "@/components/Footer";
 import { Feature } from "@/components/Features";
 import { Brands } from "@/components/Brands";
+import { OurClient } from "@/components/OurClient";
+import { Testmonial } from "@/components/Testmonial";
 // import { Feather } from "lucide-react";
 // import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 export default function Home() {
-return (
-  <>
-  <Navbar></Navbar>
-  <HeroParallax products={[
-    {
-      title: "",
-      link: "",
-      thumbnail: avaWoman
-    },
-    {
-    title: '',
-    link: "",
-    thumbnail: box
-  },{
-    title: "",
-    link: "",
-    thumbnail: pensWithRoundedBox 
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: penWithLeaves
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: careEnv
-  },
-   
-  {
-    title: "",
-    link: "",
-    thumbnail: careEnv
-  },
-  
-  {
-    title: "",
-    link: "",
-    thumbnail: zeroWaste
-  },
-  
-  {
-    title: "",
-    link: "",
-    thumbnail: leafEcoWord
-  },
-  
-  {
-    title: "",
-    link: "",
-    thumbnail: EcoPaper
-  },
- 
-  {
-    title: "",
-    link: "",
-    thumbnail: careEnv
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: asthatic4
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: asthatic2
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: asthatic3
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: asthatic1
-  },
-  {
-    title: "",
-    link: "",
-    thumbnail: asthatic5
-  },
-  
-  
-  
-  ]}></HeroParallax>
-  
-<Feature></Feature>
-<Brands></Brands>
-  <FooterOne></FooterOne>
-    
-  </>  
+  return (
+    <div className="bg-black text-white">
+      <HeroParallax products={[
+        {
+          title: "",
+          link: "",
+          thumbnail: avaWoman
+        },
+        {
+          title: '',
+          link: "",
+          thumbnail: box
+        }, {
+          title: "",
+          link: "",
+          thumbnail: pensWithRoundedBox
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: penWithLeaves
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: careEnv
+        },
+
+        {
+          title: "",
+          link: "",
+          thumbnail: careEnv
+        },
+
+        {
+          title: "",
+          link: "",
+          thumbnail: zeroWaste
+        },
+
+        {
+          title: "",
+          link: "",
+          thumbnail: leafEcoWord
+        },
+
+        {
+          title: "",
+          link: "",
+          thumbnail: EcoPaper
+        },
+
+        {
+          title: "",
+          link: "",
+          thumbnail: careEnv
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: asthatic4
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: asthatic2
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: asthatic3
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: asthatic1
+        },
+        {
+          title: "",
+          link: "",
+          thumbnail: asthatic5
+        },
+
+
+
+      ]}></HeroParallax>
+
+      <Feature></Feature>
+
+      <ProductMain></ProductMain>
+      <Brands></Brands>
+      <Testmonial></Testmonial>
+      <OurClient></OurClient>
+      <FooterOne></FooterOne>
+
+    </div>
   );
 }
