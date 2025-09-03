@@ -39,7 +39,7 @@ const ShippingPolicy: React.FC = () => {
 
             <div className="bg-green-50 border border-green-200 rounded-lg p-4">
               <p className="text-green-800 text-sm">
-                Orders are shipped within 7 days from the date of the order and/or payment or as per the delivery date agreed at the time of order confirmation and delivering of the shipment, subject to courier company / post office norms.
+                Orders are Shipped and delivered within 7 days from the date of the order and/or payment or as per the delivery date agreed at the time of order confirmation and delivering of the shipment, subject to courier company / post office norms.
               </p>
             </div>
 
@@ -120,9 +120,9 @@ const ShippingPolicy: React.FC = () => {
                   )}
                 </div>
               </button>
-              
+
               {expandedSections[section.id] && (
-                <div 
+                <div
                   id={`section-${section.id}`}
                   className="px-6 pb-6 border-t border-gray-100"
                 >
