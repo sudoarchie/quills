@@ -7,10 +7,10 @@ export function FooterOne() {
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-            <div className="flex h-full flex-col justify-between">
+            <div className="flex h-full flex-col ">
               <div className="mb-4 inline-flex items-center">
 
-                <span className="ml-4 text-lg font-bold">Quills Stroke</span>
+                <span className=" xl:text-4xl text-lg font-bold">Quills Stroke</span>
               </div>
               <div>
                 <p className="mb-4  text-base font-medium">Contact Us: +91 9532340629 <br></br>Email Us: support@Quiillsstroke.com</p>
@@ -40,6 +40,26 @@ export function FooterOne() {
                 <li className="mb-4">
                   <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/media">
                     Media
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/privacypolicy">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/returnandrefund">
+                    Return and Refund policy
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/shippingpolicy">
+                    Shipping Policy
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link className=" text-base font-medium text-gray-900 dark:text-white hover:text-gray-700" href="/termandcondition">
+                    Term and condition
                   </Link>
                 </li>
                 {/* <li>
